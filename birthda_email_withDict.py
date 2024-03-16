@@ -12,6 +12,7 @@ todays_date=dt.datetime.now()
 current_month=todays_date.month
 current_date=todays_date.day
 
+
 with open ("birthdays.csv", "r") as birthdays:
     data=csv.reader(birthdays)
     next(data) #to skip header row
@@ -33,6 +34,9 @@ with open ("birthdays.csv", "r") as birthdays:
                 lines=input_file.readlines()
                 for line in lines:
                     line=line.replace('[NAME]', to_name)
+                    #string is immutable, so you have to store in a variable. Simply using replace will
+                    #not work
+
                     message+=line
                     dict1[to_name] = (to_address,message)
                     # a dictionary with a tuple as a value. The first item in the tuple is the
