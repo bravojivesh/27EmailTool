@@ -4,7 +4,7 @@ import datetime as dt
 import csv
 
 my_email="bravojivesh@gmail.com"
-my_password="stlbzsdseboaggvi" #need to use gmail settings to get this
+my_password="<not putting here due to security reasons>" #need to use gmail settings to get this
 message=""
 
 todays_date=dt.datetime.now()
